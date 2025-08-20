@@ -4,7 +4,7 @@ provider "aws" {
 
 
 resource "aws_instance" "example" {
-  ami           = "ami-0fb653ca2d3203ac1" # Ubuntu 24.04 LTS // us-east-2
+  ami           = "ami-0fb653ca2d3203ac1" # New Ubuntu Iyesnstance 
   instance_type = "t2.micro"
 
   user_data = <<-EOF
