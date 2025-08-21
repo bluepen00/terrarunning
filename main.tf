@@ -4,7 +4,7 @@ provider "aws" {
 
 
 resource "aws_instance" "example" {
-  ami                    = "ami-0fb653ca2d3203ac1" # New Ubuntu Iyesnstance 
+  ami                    = "ami-0fb653ca2d3203ac1" # New Ubuntu Instance 
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.instance-sg.id]
 
@@ -31,3 +31,4 @@ resource "aws_security_group" "instance-sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
